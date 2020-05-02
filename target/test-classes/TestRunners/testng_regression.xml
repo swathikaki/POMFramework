@@ -14,9 +14,9 @@
     <test name="Regression Test" verbose="2">
          
          <classes>
-             <class name="com.qa.hubspot.tests.LoginPageTest"/> 
-            <!--  <class name="com.qa.hubspot.tests.HomePageTest"/> 
-             <class name="com.qa.hubspot.tests.ContactsPageTest"/> -->
+            <!--  <class name="com.qa.hubspot.tests.LoginPageTest"/> 
+             <class name="com.qa.hubspot.tests.HomePageTest"/>  -->
+             <class name="com.qa.hubspot.tests.ContactsPageTest"/> 
          </classes>
      </test> 
 </suite>
