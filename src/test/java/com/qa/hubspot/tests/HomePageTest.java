@@ -8,9 +8,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.qa.hubsot.pages.HomePage;
-import com.qa.hubsot.pages.LoginPage;
 import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.pages.HomePage;
+import com.qa.hubspot.pages.LoginPage;
 import com.qa.hubspot.utils.Constants;
 
 import io.qameta.allure.Description;

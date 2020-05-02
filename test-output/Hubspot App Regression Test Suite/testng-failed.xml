@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Hubspot App Regression Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.hubspot.listeners.PdfListener"/>
+    <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.hubspot.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.hubspot.listeners.TesultsListener"/>
+    <listener class-name="com.qa.hubspot.listeners.ScreenshotListener"/>
+  </listeners>
   <test thread-count="5" name="Regression Test(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.HomePageTest">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyHomePageHeaderTest"/>
           <include name="setup"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Hubspot App Regression Test Suite] -->
