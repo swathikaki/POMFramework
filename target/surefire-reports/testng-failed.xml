@@ -2,15 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Hubspot App Regression Test Suite]">
   <listeners>
+    <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.hubspot.listeners.TestAllureListener"/>
     <listener class-name="com.qa.hubspot.listeners.TesultsListener"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Regression Test(failed)">
     <classes>
       <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
+          <include name="verifyShowPasswordLinkTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
         </methods>
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </classes>
