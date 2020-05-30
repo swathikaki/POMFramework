@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -22,6 +23,7 @@ import io.qameta.allure.SeverityLevel;
 
 @Epic("Epic - 101: design Login page feature")
 @Feature("US - 105: design test cases for login page feature")
+@Listeners(com.qa.hubspot.listeners.TestAllureListener.class)
 public class LoginPageTest {
 
 	// pre condition --> Test -->actual vs expected --> post step

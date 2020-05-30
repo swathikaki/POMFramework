@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -17,6 +18,12 @@ import com.qa.hubspot.utils.Constants;
 import com.qa.hubspot.utils.ElementUtil;
 import com.qa.hubspot.utils.ExcelUtil;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+
+@Epic("Epic - 103: design Contact page feature")
+@Feature("US - 107: design test cases for Contact page feature")
+@Listeners(com.qa.hubspot.listeners.TestAllureListener.class)
 public class ContactsPageTest {
 	
 	Properties prop;

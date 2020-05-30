@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="29.369" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="51.089" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Swathi\Java\jdk1.8.0_201\jre\bin"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Swathi\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,9 +64,31 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.034"/>
-  <testcase name="verifySignUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.217"/>
-  <testcase name="verifyShowPasswordLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.163"/>
-  <testcase name="verifyForgotPasswordLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.185"/>
-  <testcase name="loginTest" classname="com.qa.hubspot.tests.LoginPageTest" time="9.922"/>
+  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.564"/>
+  <testcase name="verifySignUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.895"/>
+  <testcase name="verifyShowPasswordLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.973">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;password-help&apos;]/button/span&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-FN2OEAE&apos;, ip: &apos;192.168.1.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\swathi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8d71d887efa94f7a991ffc91f2d28346&#10;*** Element info: {Using=xpath, value=//span[@id=&apos;password-help&apos;]/button/span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='password-help']/button/span"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FN2OEAE', ip: '192.168.1.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\swathi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8d71d887efa94f7a991ffc91f2d28346
+*** Element info: {Using=xpath, value=//span[@id='password-help']/button/span}
+	at com.qa.hubspot.tests.LoginPageTest.verifyShowPasswordLinkTest(LoginPageTest.java:71)
+</failure>
+    <system-out><![CDATA[I am in onTestSuccess method verifySignUpLinkTest succeed
+verifySignUpLinkTest passed!
+I am in onTestStart method verifyShowPasswordLinkTest start
+I am in onTestStart method verifyShowPasswordLinkTest start
+I am in onTestStart method verifyShowPasswordLinkTest start
+verifyShowPasswordLinkTest started!
+I am in onTestFailure method verifyShowPasswordLinkTest failed
+Screenshot captured for test case:verifyShowPasswordLinkTest
+]]></system-out>
+  </testcase>
+  <testcase name="verifyForgotPasswordLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="1.685"/>
+  <testcase name="loginTest" classname="com.qa.hubspot.tests.LoginPageTest" time="13.547"/>
 </testsuite>
